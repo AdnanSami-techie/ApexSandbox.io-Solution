@@ -1,14 +1,14 @@
 public static Integer findLargest(Integer num1, Integer num2, Integer num3) {
-
-    if ( num1 >= num2 && num1 >= num 3)
-    {
-        return num1;
+	//code here
+    Integer result;
+    if(num1 > num2 && num1 > num3){
+        result = num1;
     }
-    else if(num2 >= num1 && num2 >= num3)
-    {
-        return num2;
+    else if(num2 > num1 && num2 > num3){
+        result = num2;
     }
-    else (num3 >= num1 && num3 >= num2 )
-        return num3;
-    
+    else (num3 > num1 && num3 > num2){
+        result = num3;
+    }
+    return result;
 }
