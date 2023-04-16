@@ -1,17 +1,17 @@
 public Integer rockPaperScissors(String player1, String player2) {
     //code here
-    Integer result;
+      Integer result; // add semicolon to end of line
     if ((player1 == 'rock' || player1 == 'paper' || player1 == 'scissors') && (player2 == 'rock' || player2 == 'paper' || player2 == 'scissors')) {
-    if ((player1 == 'rock' && player2 =='paper') || (player1 == 'paper' && player2 == 'scissors') || (player1 == 'scissors' && player2 == 'rock')) {
-        result =2;
-    } else ((player2 == 'rock' && player1 == 'paper') || (player2 == 'paper' && player1 == 'scissors') || (player2 == 'scissors' && player1 == 'rock')) {
-        result =1;
-    } 
+        if ((player1 == 'rock' && player2 =='paper') || (player1 == 'paper' && player2 == 'scissors') || (player1 == 'scissors' && player2 == 'rock')) {
+            result = 2;
+        } else if ((player2 == 'rock' && player1 == 'paper') || (player2 == 'paper' && player1 == 'scissors') || (player2 == 'scissors' && player1 == 'rock')) { // add "else if" instead of "else"
+            result = 1;
+        } else {
+            result = 0;
+        }
+    } else {
+        result = 0;
+    }
+    return result;
 
-}
-
-else {
-    result = 0;
-}
-return result;
 }
