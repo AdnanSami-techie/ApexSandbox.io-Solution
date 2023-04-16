@@ -1,6 +1,6 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
     //code here
     String result;
-    result =((a + b == c) ? return 'c' : ((b + c == a) ? return 'a' :((c + a == b) ? return'b' : ''));
+    result =((a + b == c) ? 'c' : ((b + c == a) ? 'a' :((c + a == b) ? 'b' : ''));
     return result;
 }
