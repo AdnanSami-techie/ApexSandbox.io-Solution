@@ -9,7 +9,7 @@ public static Integer findLargest(Integer num1, Integer num2, Integer num3) {
         result = num3;
     } else {
         // handle case where two or more numbers are equal and largest
-        result = null;
+        result = 0;
     }
     return result;
 }
