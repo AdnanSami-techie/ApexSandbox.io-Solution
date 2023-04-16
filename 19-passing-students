@@ -13,5 +13,9 @@ public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean p
     {
         pass = true;
     }
+        if(passedExam == false && passedAssignments == true && passedExam == true)
+    {
+        pass = true;
+    }
     return pass;
 }
