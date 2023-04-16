@@ -1,21 +1,15 @@
 public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
     //code here
-    Boolean pass = false;
-    if(passedExam == true && passedAssignments == false && passedExam == true)
+    Boolean result;
+
+    if((passedExam && passedAssignments) || (passedExam && passedProject) || (passedAssignments && passedProject ))
     {
-        pass = true;
+        result = true;
     }
-    else if (passedExam == false && passedAssignments == true && passedExam==false )
+    else 
     {
-        pass = false;
+        result = false;
     }
-    else if(passedExam == true && passedAssignments == true && passedExam==false )
-    {
-        pass = true;
-    }
-    else if(passedExam == true && passedAssignments == false && passedExam == false)
-    {
-        pass = false;
-    }
-    return pass;
+
+    return result;
 }
