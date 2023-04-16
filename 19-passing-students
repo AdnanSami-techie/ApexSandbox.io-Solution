@@ -13,7 +13,7 @@ public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean p
     {
         pass = true;
     }
-        if(passedExam == true && passedAssignments == false && passedExam == false)
+    else if(passedExam == true && passedAssignments == false && passedExam == false)
     {
         pass = false;
     }
